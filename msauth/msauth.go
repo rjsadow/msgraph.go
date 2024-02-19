@@ -21,7 +21,7 @@ import (
 
 const (
 	// DefaultMSGraphScope is the default scope for MS Graph API
-	DefaultMSGraphScope = "https://dod-graph.microsoft.us/.default"
+	DefaultMSGraphScope = "https://graph.microsoft.us/.default"
 	endpointURLFormat   = "https://login.microsoftonline.com/%s/oauth2/v2.0/%s"
 )
 
