@@ -1,12 +1,12 @@
 # msgraph.go
 
-[![](https://github.com/yaegashi/msgraph.go/workflows/go%20generate%20test/badge.svg?branch=master)](https://github.com/yaegashi/msgraph.go/actions)
+[![](https://github.com/rjsadow/msgraph.go/workflows/go%20generate%20test/badge.svg?branch=master)](https://github.com/rjsadow/msgraph.go/actions)
 
 |v1.0|beta|
 |---|---|
-|[![pkg.go.dev](https://pkg.go.dev/badge/github.com/yaegashi/msgraph.go/v1.0)](https://pkg.go.dev/github.com/yaegashi/msgraph.go/v1.0)|[![pkg.go.dev](https://pkg.go.dev/badge/github.com/yaegashi/msgraph.go/beta)](https://pkg.go.dev/github.com/yaegashi/msgraph.go/beta)|
+|[![pkg.go.dev](https://pkg.go.dev/badge/github.com/rjsadow/msgraph.go/v1.0)](https://pkg.go.dev/github.com/rjsadow/msgraph.go/v1.0)|[![pkg.go.dev](https://pkg.go.dev/badge/github.com/rjsadow/msgraph.go/beta)](https://pkg.go.dev/github.com/rjsadow/msgraph.go/beta)|
 
-(The online references at pkg.go.dev above are not shown due to huge size of packages - [#23](https://github.com/yaegashi/msgraph.go/issues/23))
+(The online references at pkg.go.dev above are not shown due to huge size of packages - [#23](https://github.com/rjsadow/msgraph.go/issues/23))
 
 ## Introduction
 
@@ -22,9 +22,9 @@ heavily relying on C# and non-portable .NET Framework.
 
 ## v0.x.x releases
 
-See [GitHub releases](https://github.com/yaegashi/msgraph.go/releases)
+See [GitHub releases](https://github.com/rjsadow/msgraph.go/releases)
 for all release tags and release notes,
-and [pkg.go.dev](https://pkg.go.dev/mod/github.com/yaegashi/msgraph.go)
+and [pkg.go.dev](https://pkg.go.dev/mod/github.com/rjsadow/msgraph.go)
 for all Go module versions available for your applications.
 
 Until v1.0.0, all types of changes might be included in every release:
@@ -35,11 +35,11 @@ bug fixes, new features, even incompatible API updates.
 You can choose API version when importing `msgraph` package:
 
 ```go
-import msgraph "github.com/yaegashi/msgraph.go/v1.0"
+import msgraph "github.com/rjsadow/msgraph.go/v1.0"
 ```
 
 ```go
-import msgraph "github.com/yaegashi/msgraph.go/beta"
+import msgraph "github.com/rjsadow/msgraph.go/beta"
 ```
 
 You could benefit from better IDE assisted coding experience
@@ -79,7 +79,7 @@ $ go generate ./gen
 2020/08/02 19:47:07 Formatting ../v1.0/EnumReject.go
 ```
 
-(Currently code generation from the latest metadata is broken - [#22](https://github.com/yaegashi/msgraph.go/issues/22))
+(Currently code generation from the latest metadata is broken - [#22](https://github.com/rjsadow/msgraph.go/issues/22))
 
 ## Todo
 
@@ -94,7 +94,7 @@ $ go generate ./gen
 - [x] Provide easy way to generate pointers to constants
 - [x] Provide easy way to add queries like `$expand` `$select` `$filter`
 - [x] Every request method should take a ctx as the first arg for better control
-- [ ] Online API docs (the output is too big for pkg.go.dev to handle - [#23](https://github.com/yaegashi/msgraph.go/issues/23))
+- [ ] Online API docs (the output is too big for pkg.go.dev to handle - [#23](https://github.com/rjsadow/msgraph.go/issues/23))
 - [ ] Unit tests
 - [x] CI
 - [x] Persist OAuth2 tokens in file
@@ -105,7 +105,7 @@ $ go generate ./gen
 - [x] Reduce number of generated files (#11)
 - [x] Provide easy way to add HTTP headers like `Prefer: outlook.timezone="Tokyo Standard Time"`
 - [ ] Support max number of pages to retrieve from a collection
-- [x] Support Windows time zone names in DateTimeTimeZone (utilize [wtz.go](https://github.com/yaegashi/wtz.go))
+- [x] Support Windows time zone names in DateTimeTimeZone (utilize [wtz.go](https://github.com/rjsadow/wtz.go))
 
 ## References
 
@@ -122,9 +122,9 @@ $ go generate ./gen
 [Microsoft Graph SDKs - Requirements and Design]: https://microsoftgraph.github.io/msgraph-sdk-design/
 [Microsoft Graph SDK Code Generator]: https://github.com/microsoftgraph/MSGraph-SDK-Code-Generator
 [GitHub repository search for msgraph in Go]: https://github.com/search?l=Go&q=msgraph&type=Repositories
-[Microsoft Graph API Library for Go]: https://www.slideshare.net/yaegashi/microsoft-graph-api-library-for-go
+[Microsoft Graph API Library for Go]: https://www.slideshare.net/rjsadow/microsoft-graph-api-library-for-go
 [msgraph.go demo - SharePoint Online + Microsoft Flow + GitLab CI]: https://www.youtube.com/watch?v=DwKk405XyF4
 
 ## Applications
 
-- [Terraform Provider for Microsoft Graph](https://github.com/yaegashi/terraform-provider-msgraph)
+- [Terraform Provider for Microsoft Graph](https://github.com/rjsadow/terraform-provider-msgraph)

@@ -33,7 +33,7 @@ Get SSH public keys (you can omit `-op get`):
 
 ```console
 $ msgraph-sshpubkey
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTv2zRefcFMXafSRneDlULwCPh0v7SM9rJPIlySgd8WEJwk3/bY4B6j6hMPk3xS/JAqvQG0hc5cRSSmo4tG9H7TDjmGKBptIsGr5skTx181nbv/qRLYrej80KFrKyt2yHxg7BFOMGDSG1RnRVDUQJxlYxluavky0dv3KGRt6TtDuzuLGi6flHcqJymlZleqprEEwZwc0ju/ZNBfpEW2A+e69nJkudgT8jsO3a61iQ9myf7Jdk/0dxHPoHhu2VWEv/YcFPr0OX5fp7OHVL56vYb6yQVSVp1MtqjqSLpSK+O1eEGnwLsI9/93DXUj3gFncqjddgD75SQ1N9e1DPYK9sz /Users/yaegashi/.ssh/id_rsa
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTv2zRefcFMXafSRneDlULwCPh0v7SM9rJPIlySgd8WEJwk3/bY4B6j6hMPk3xS/JAqvQG0hc5cRSSmo4tG9H7TDjmGKBptIsGr5skTx181nbv/qRLYrej80KFrKyt2yHxg7BFOMGDSG1RnRVDUQJxlYxluavky0dv3KGRt6TtDuzuLGi6flHcqJymlZleqprEEwZwc0ju/ZNBfpEW2A+e69nJkudgT8jsO3a61iQ9myf7Jdk/0dxHPoHhu2VWEv/YcFPr0OX5fp7OHVL56vYb6yQVSVp1MtqjqSLpSK+O1eEGnwLsI9/93DXUj3gFncqjddgD75SQ1N9e1DPYK9sz /Users/rjsadow/.ssh/id_rsa
 ```
 
 Delete SSH public keys:
@@ -56,7 +56,7 @@ On SSH server hosts, prepare /etc/msgraph-sshpubkey.json with something like the
   "client_secret": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
   "login_map": {
     "admin": "admin@l0wdev.onmicrosoft.com",
-    "yaegashi": "yaegashi@l0wdev.onmicrosoft.com",
+    "rjsadow": "rjsadow@l0wdev.onmicrosoft.com",
     "takeshi": "takeshi@l0wdev.onmicrosoft.com"
   }
 }
@@ -65,8 +65,8 @@ On SSH server hosts, prepare /etc/msgraph-sshpubkey.json with something like the
 Run msgraph-sshpubkey on the shell to see it can certainly retrieve SSH public keys that user has registered:
 
 ```console
-$ msgraph-sshpubkey -config /etc/msgraph-sshpubkey.json -login yaegashi
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTv2zRefcFMXafSRneDlULwCPh0v7SM9rJPIlySgd8WEJwk3/bY4B6j6hMPk3xS/JAqvQG0hc5cRSSmo4tG9H7TDjmGKBptIsGr5skTx181nbv/qRLYrej80KFrKyt2yHxg7BFOMGDSG1RnRVDUQJxlYxluavky0dv3KGRt6TtDuzuLGi6flHcqJymlZleqprEEwZwc0ju/ZNBfpEW2A+e69nJkudgT8jsO3a61iQ9myf7Jdk/0dxHPoHhu2VWEv/YcFPr0OX5fp7OHVL56vYb6yQVSVp1MtqjqSLpSK+O1eEGnwLsI9/93DXUj3gFncqjddgD75SQ1N9e1DPYK9sz /Users/yaegashi/.ssh/id_rsa
+$ msgraph-sshpubkey -config /etc/msgraph-sshpubkey.json -login rjsadow
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTv2zRefcFMXafSRneDlULwCPh0v7SM9rJPIlySgd8WEJwk3/bY4B6j6hMPk3xS/JAqvQG0hc5cRSSmo4tG9H7TDjmGKBptIsGr5skTx181nbv/qRLYrej80KFrKyt2yHxg7BFOMGDSG1RnRVDUQJxlYxluavky0dv3KGRt6TtDuzuLGi6flHcqJymlZleqprEEwZwc0ju/ZNBfpEW2A+e69nJkudgT8jsO3a61iQ9myf7Jdk/0dxHPoHhu2VWEv/YcFPr0OX5fp7OHVL56vYb6yQVSVp1MtqjqSLpSK+O1eEGnwLsI9/93DXUj3gFncqjddgD75SQ1N9e1DPYK9sz /Users/rjsadow/.ssh/id_rsa
 ```
 
 Put the following lines in /etc/ssh/sshd_config then reload sshd:

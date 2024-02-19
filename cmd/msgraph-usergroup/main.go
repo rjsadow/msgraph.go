@@ -8,10 +8,10 @@ import (
 	"os"
 
 	"github.com/google/uuid"
-	msgraph "github.com/yaegashi/msgraph.go/beta"
-	"github.com/yaegashi/msgraph.go/jsonx"
-	"github.com/yaegashi/msgraph.go/msauth"
-	P "github.com/yaegashi/msgraph.go/ptr"
+	msgraph "github.com/rjsadow/msgraph.go/beta"
+	"github.com/rjsadow/msgraph.go/jsonx"
+	"github.com/rjsadow/msgraph.go/msauth"
+	P "github.com/rjsadow/msgraph.go/ptr"
 	"golang.org/x/oauth2"
 )
 

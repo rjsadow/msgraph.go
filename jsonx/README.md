@@ -14,7 +14,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/yaegashi/msgraph.go/jsonx"
+	"github.com/rjsadow/msgraph.go/jsonx"
 )
 
 type Extra struct {

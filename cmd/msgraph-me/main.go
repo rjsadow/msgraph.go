@@ -11,9 +11,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/yaegashi/msgraph.go/jsonx"
-	"github.com/yaegashi/msgraph.go/msauth"
-	msgraph "github.com/yaegashi/msgraph.go/v1.0"
+	"github.com/rjsadow/msgraph.go/jsonx"
+	"github.com/rjsadow/msgraph.go/msauth"
+	msgraph "github.com/rjsadow/msgraph.go/v1.0"
 	"github.com/yaegashi/wtz.go"
 	"golang.org/x/oauth2"
 )

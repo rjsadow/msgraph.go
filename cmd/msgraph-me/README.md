@@ -12,9 +12,9 @@ To sign in, use a web browser to open the page https://microsoft.com/devicelogin
   "id": "6764eb11-841c-444e-b770-0e0d8748ea0a",
   "displayName": "八重樫 剛史",
   "givenName": "剛史",
-  "mail": "yaegashi@l0wdev.onmicrosoft.com",
+  "mail": "rjsadow@l0wdev.onmicrosoft.com",
   "surname": "八重樫",
-  "userPrincipalName": "yaegashi@l0wdev.onmicrosoft.com"
+  "userPrincipalName": "rjsadow@l0wdev.onmicrosoft.com"
 }
 2019/12/07 02:39:21 Get files in the root folder of user's drive
 2019/12/07 02:39:21 GET https://graph.microsoft.com/v1.0/me/drive/root/children
